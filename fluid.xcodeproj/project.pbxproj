@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E942B5CE238EB0BA00A7F9FA /* fluid_synth.m in Sources */ = {isa = PBXBuildFile; fileRef = E942B5CD238EB0BA00A7F9FA /* fluid_synth.m */; };
+		E958A4E6233DF5BF00FC95FF /* fluid_event.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A480233DF5B800FC95FF /* fluid_event.c */; };
+		E958A4E7233DF5BF00FC95FF /* fluid_dart.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A482233DF5B800FC95FF /* fluid_dart.c */; };
+		E958A4E8233DF5BF00FC95FF /* fluidsynth.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A483233DF5B900FC95FF /* fluidsynth.c */; };
+		E958A4E9233DF5BF00FC95FF /* fluid_rvoice_dsp.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A486233DF5B900FC95FF /* fluid_rvoice_dsp.c */; };
+		E958A4EA233DF5BF00FC95FF /* fluid_filerenderer.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A487233DF5B900FC95FF /* fluid_filerenderer.c */; };
+		E958A4EC233DF5BF00FC95FF /* fluid_lfo.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A489233DF5B900FC95FF /* fluid_lfo.c */; };
+		E958A4EE233DF5BF00FC95FF /* fluid_portaudio.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A48C233DF5B900FC95FF /* fluid_portaudio.c */; };
+		E958A4EF233DF5BF00FC95FF /* fluid_sys.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A48D233DF5B900FC95FF /* fluid_sys.c */; };
+		E958A4F0233DF5BF00FC95FF /* fluid_iir_filter.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A492233DF5B900FC95FF /* fluid_iir_filter.c */; };
+		E958A4F1233DF5BF00FC95FF /* fluid_rvoice_event.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A494233DF5B900FC95FF /* fluid_rvoice_event.c */; };
+		E958A4F2233DF5BF00FC95FF /* fluid_mod.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A496233DF5B900FC95FF /* fluid_mod.c */; };
+		E958A4F3233DF5BF00FC95FF /* fluid_rev.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A499233DF5BA00FC95FF /* fluid_rev.c */; };
+		E958A4F4233DF5BF00FC95FF /* fluid_ringbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A49B233DF5BA00FC95FF /* fluid_ringbuffer.c */; };
+		E958A4F5233DF5BF00FC95FF /* fluid_alsa.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A49C233DF5BA00FC95FF /* fluid_alsa.c */; };
+		E958A4F6233DF5BF00FC95FF /* fluid_chan.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A49D233DF5BA00FC95FF /* fluid_chan.c */; };
+		E958A4F7233DF5BF00FC95FF /* fluid_sfont.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A49F233DF5BA00FC95FF /* fluid_sfont.c */; };
+		E958A4F8233DF5BF00FC95FF /* fluid_sndmgr.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4A0233DF5BA00FC95FF /* fluid_sndmgr.c */; };
+		E958A4FA233DF5BF00FC95FF /* fluid_cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4A5233DF5BA00FC95FF /* fluid_cmd.c */; };
+		E958A4FB233DF5BF00FC95FF /* fluid_mdriver.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4A6233DF5BA00FC95FF /* fluid_mdriver.c */; };
+		E958A4FD233DF5BF00FC95FF /* fluid_jack.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4A9233DF5BA00FC95FF /* fluid_jack.c */; };
+		E958A4FE233DF5BF00FC95FF /* fluid_aufile.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4AC233DF5BB00FC95FF /* fluid_aufile.c */; };
+		E958A4FF233DF5BF00FC95FF /* fluid_defsfont.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4AD233DF5BB00FC95FF /* fluid_defsfont.c */; };
+		E958A500233DF5BF00FC95FF /* fluid_rtkit.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4AF233DF5BB00FC95FF /* fluid_rtkit.c */; };
+		E958A505233DF5BF00FC95FF /* fluid_midi.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4B8233DF5BB00FC95FF /* fluid_midi.c */; };
+		E958A506233DF5BF00FC95FF /* fluid_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4B9233DF5BB00FC95FF /* fluid_hash.c */; };
+		E958A507233DF5BF00FC95FF /* fluid_seq.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4BA233DF5BB00FC95FF /* fluid_seq.c */; };
+		E958A508233DF5BF00FC95FF /* fluid_pulse.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4BC233DF5BB00FC95FF /* fluid_pulse.c */; };
+		E958A509233DF5BF00FC95FF /* fluid_tuning.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4BD233DF5BB00FC95FF /* fluid_tuning.c */; };
+		E958A50A233DF5BF00FC95FF /* fluid_voice.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4BE233DF5BB00FC95FF /* fluid_voice.c */; };
+		E958A50B233DF5BF00FC95FF /* fluid_rvoice_mixer.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4C3233DF5BC00FC95FF /* fluid_rvoice_mixer.c */; };
+		E958A50C233DF5BF00FC95FF /* fluid_adsr_env.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4C4233DF5BC00FC95FF /* fluid_adsr_env.c */; };
+		E958A50D233DF5BF00FC95FF /* fluid_ladspa.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4C5233DF5BC00FC95FF /* fluid_ladspa.c */; };
+		E958A50F233DF5BF00FC95FF /* fluid_rvoice.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4C9233DF5BC00FC95FF /* fluid_rvoice.c */; };
+		E958A512233DF5BF00FC95FF /* fluid_settings.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4CD233DF5BD00FC95FF /* fluid_settings.c */; };
+		E958A513233DF5BF00FC95FF /* fluid_coreaudio.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4CE233DF5BD00FC95FF /* fluid_coreaudio.c */; };
+		E958A514233DF5BF00FC95FF /* fluid_oss.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4CF233DF5BD00FC95FF /* fluid_oss.c */; };
+		E958A515233DF5BF00FC95FF /* fluid_midi_router.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4D0233DF5BD00FC95FF /* fluid_midi_router.c */; };
+		E958A516233DF5BF00FC95FF /* fluid_winmidi.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4D1233DF5BD00FC95FF /* fluid_winmidi.c */; };
+		E958A517233DF5BF00FC95FF /* fluid_lash.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4D3233DF5BD00FC95FF /* fluid_lash.c */; };
+		E958A518233DF5BF00FC95FF /* fluid_chorus.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4D5233DF5BD00FC95FF /* fluid_chorus.c */; };
+		E958A519233DF5BF00FC95FF /* fluid_list.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4D6233DF5BE00FC95FF /* fluid_list.c */; };
+		E958A51A233DF5BF00FC95FF /* fluid_conv.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4D7233DF5BE00FC95FF /* fluid_conv.c */; };
+		E958A51C233DF5BF00FC95FF /* fluid_coremidi.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4DB233DF5BE00FC95FF /* fluid_coremidi.c */; };
+		E958A51D233DF5BF00FC95FF /* fluid_seqbind.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4DC233DF5BE00FC95FF /* fluid_seqbind.c */; };
+		E958A51E233DF5BF00FC95FF /* fluid_midishare.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4DE233DF5BE00FC95FF /* fluid_midishare.c */; };
+		E958A51F233DF5BF00FC95FF /* fluid_adriver.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4E0233DF5BE00FC95FF /* fluid_adriver.c */; };
+		E958A520233DF5BF00FC95FF /* fluid_synth_monopoly.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4E1233DF5BF00FC95FF /* fluid_synth_monopoly.c */; };
+		E958A521233DF5BF00FC95FF /* fluid_gen.c in Sources */ = {isa = PBXBuildFile; fileRef = E958A4E2233DF5BF00FC95FF /* fluid_gen.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E958A3BB233DECE700FC95FF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E942B5CD238EB0BA00A7F9FA /* fluid_synth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fluid_synth.m; sourceTree = "<group>"; };
+		E958A3BD233DECE700FC95FF /* libfluid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfluid.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E958A422233DF04200FC95FF /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		E958A47E233DF5B800FC95FF /* fluid_iir_filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_iir_filter.h; sourceTree = "<group>"; };
+		E958A47F233DF5B800FC95FF /* fluid_adsr_env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_adsr_env.h; sourceTree = "<group>"; };
+		E958A480233DF5B800FC95FF /* fluid_event.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_event.c; sourceTree = "<group>"; };
+		E958A482233DF5B800FC95FF /* fluid_dart.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_dart.c; sourceTree = "<group>"; };
+		E958A483233DF5B900FC95FF /* fluidsynth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluidsynth.c; sourceTree = "<group>"; };
+		E958A485233DF5B900FC95FF /* fluid_mdriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_mdriver.h; sourceTree = "<group>"; };
+		E958A486233DF5B900FC95FF /* fluid_rvoice_dsp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_rvoice_dsp.c; sourceTree = "<group>"; };
+		E958A487233DF5B900FC95FF /* fluid_filerenderer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_filerenderer.c; sourceTree = "<group>"; };
+		E958A489233DF5B900FC95FF /* fluid_lfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_lfo.c; sourceTree = "<group>"; };
+		E958A48A233DF5B900FC95FF /* fluid_ladspa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_ladspa.h; sourceTree = "<group>"; };
+		E958A48C233DF5B900FC95FF /* fluid_portaudio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_portaudio.c; sourceTree = "<group>"; };
+		E958A48D233DF5B900FC95FF /* fluid_sys.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_sys.c; sourceTree = "<group>"; };
+		E958A48F233DF5B900FC95FF /* fluid_rvoice_mixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_rvoice_mixer.h; sourceTree = "<group>"; };
+		E958A490233DF5B900FC95FF /* fluidsynth */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fluidsynth; sourceTree = "<group>"; };
+		E958A492233DF5B900FC95FF /* fluid_iir_filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_iir_filter.c; sourceTree = "<group>"; };
+		E958A493233DF5B900FC95FF /* fluid_lash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_lash.h; sourceTree = "<group>"; };
+		E958A494233DF5B900FC95FF /* fluid_rvoice_event.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_rvoice_event.c; sourceTree = "<group>"; };
+		E958A495233DF5B900FC95FF /* fluid_mod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_mod.h; sourceTree = "<group>"; };
+		E958A496233DF5B900FC95FF /* fluid_mod.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_mod.c; sourceTree = "<group>"; };
+		E958A497233DF5B900FC95FF /* fluid_phase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_phase.h; sourceTree = "<group>"; };
+		E958A498233DF5BA00FC95FF /* fluid_settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_settings.h; sourceTree = "<group>"; };
+		E958A499233DF5BA00FC95FF /* fluid_rev.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_rev.c; sourceTree = "<group>"; };
+		E958A49A233DF5BA00FC95FF /* fluid_hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_hash.h; sourceTree = "<group>"; };
+		E958A49B233DF5BA00FC95FF /* fluid_ringbuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_ringbuffer.c; sourceTree = "<group>"; };
+		E958A49C233DF5BA00FC95FF /* fluid_alsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_alsa.c; sourceTree = "<group>"; };
+		E958A49D233DF5BA00FC95FF /* fluid_chan.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_chan.c; sourceTree = "<group>"; };
+		E958A49E233DF5BA00FC95FF /* fluid_synth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_synth.h; sourceTree = "<group>"; };
+		E958A49F233DF5BA00FC95FF /* fluid_sfont.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_sfont.c; sourceTree = "<group>"; };
+		E958A4A0233DF5BA00FC95FF /* fluid_sndmgr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_sndmgr.c; sourceTree = "<group>"; };
+		E958A4A2233DF5BA00FC95FF /* fluid_tuning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_tuning.h; sourceTree = "<group>"; };
+		E958A4A5233DF5BA00FC95FF /* fluid_cmd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_cmd.c; sourceTree = "<group>"; };
+		E958A4A6233DF5BA00FC95FF /* fluid_mdriver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_mdriver.c; sourceTree = "<group>"; };
+		E958A4A8233DF5BA00FC95FF /* fluid_rtkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_rtkit.h; sourceTree = "<group>"; };
+		E958A4A9233DF5BA00FC95FF /* fluid_jack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_jack.c; sourceTree = "<group>"; };
+		E958A4AA233DF5BA00FC95FF /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		E958A4AB233DF5BB00FC95FF /* fluid_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_gen.h; sourceTree = "<group>"; };
+		E958A4AC233DF5BB00FC95FF /* fluid_aufile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_aufile.c; sourceTree = "<group>"; };
+		E958A4AD233DF5BB00FC95FF /* fluid_defsfont.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_defsfont.c; sourceTree = "<group>"; };
+		E958A4AE233DF5BB00FC95FF /* fluidsynth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluidsynth.h; sourceTree = "<group>"; };
+		E958A4AF233DF5BB00FC95FF /* fluid_rtkit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_rtkit.c; sourceTree = "<group>"; };
+		E958A4B2233DF5BB00FC95FF /* fluidsynth_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluidsynth_priv.h; sourceTree = "<group>"; };
+		E958A4B3233DF5BB00FC95FF /* fluid_cmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_cmd.h; sourceTree = "<group>"; };
+		E958A4B4233DF5BB00FC95FF /* fluid_lfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_lfo.h; sourceTree = "<group>"; };
+		E958A4B6233DF5BB00FC95FF /* fluid_conv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_conv.h; sourceTree = "<group>"; };
+		E958A4B8233DF5BB00FC95FF /* fluid_midi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_midi.c; sourceTree = "<group>"; };
+		E958A4B9233DF5BB00FC95FF /* fluid_hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_hash.c; sourceTree = "<group>"; };
+		E958A4BA233DF5BB00FC95FF /* fluid_seq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_seq.c; sourceTree = "<group>"; };
+		E958A4BB233DF5BB00FC95FF /* fluid_voice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_voice.h; sourceTree = "<group>"; };
+		E958A4BC233DF5BB00FC95FF /* fluid_pulse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_pulse.c; sourceTree = "<group>"; };
+		E958A4BD233DF5BB00FC95FF /* fluid_tuning.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_tuning.c; sourceTree = "<group>"; };
+		E958A4BE233DF5BB00FC95FF /* fluid_voice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_voice.c; sourceTree = "<group>"; };
+		E958A4BF233DF5BC00FC95FF /* fluid_midi_router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_midi_router.h; sourceTree = "<group>"; };
+		E958A4C0233DF5BC00FC95FF /* fluid_sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_sys.h; sourceTree = "<group>"; };
+		E958A4C1233DF5BC00FC95FF /* fluid_midi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_midi.h; sourceTree = "<group>"; };
+		E958A4C2233DF5BC00FC95FF /* fluid_rvoice_event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_rvoice_event.h; sourceTree = "<group>"; };
+		E958A4C3233DF5BC00FC95FF /* fluid_rvoice_mixer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_rvoice_mixer.c; sourceTree = "<group>"; };
+		E958A4C4233DF5BC00FC95FF /* fluid_adsr_env.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_adsr_env.c; sourceTree = "<group>"; };
+		E958A4C5233DF5BC00FC95FF /* fluid_ladspa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_ladspa.c; sourceTree = "<group>"; };
+		E958A4C6233DF5BC00FC95FF /* fluid_adriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_adriver.h; sourceTree = "<group>"; };
+		E958A4C7233DF5BC00FC95FF /* fluid_rev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_rev.h; sourceTree = "<group>"; };
+		E958A4C9233DF5BC00FC95FF /* fluid_rvoice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_rvoice.c; sourceTree = "<group>"; };
+		E958A4CC233DF5BD00FC95FF /* fluid_rvoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_rvoice.h; sourceTree = "<group>"; };
+		E958A4CD233DF5BD00FC95FF /* fluid_settings.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_settings.c; sourceTree = "<group>"; };
+		E958A4CE233DF5BD00FC95FF /* fluid_coreaudio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_coreaudio.c; sourceTree = "<group>"; };
+		E958A4CF233DF5BD00FC95FF /* fluid_oss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_oss.c; sourceTree = "<group>"; };
+		E958A4D0233DF5BD00FC95FF /* fluid_midi_router.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_midi_router.c; sourceTree = "<group>"; };
+		E958A4D1233DF5BD00FC95FF /* fluid_winmidi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_winmidi.c; sourceTree = "<group>"; };
+		E958A4D2233DF5BD00FC95FF /* fluid_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_list.h; sourceTree = "<group>"; };
+		E958A4D3233DF5BD00FC95FF /* fluid_lash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_lash.c; sourceTree = "<group>"; };
+		E958A4D4233DF5BD00FC95FF /* fluid_chan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_chan.h; sourceTree = "<group>"; };
+		E958A4D5233DF5BD00FC95FF /* fluid_chorus.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_chorus.c; sourceTree = "<group>"; };
+		E958A4D6233DF5BE00FC95FF /* fluid_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_list.c; sourceTree = "<group>"; };
+		E958A4D7233DF5BE00FC95FF /* fluid_conv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_conv.c; sourceTree = "<group>"; };
+		E958A4D9233DF5BE00FC95FF /* fluid_chorus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_chorus.h; sourceTree = "<group>"; };
+		E958A4DA233DF5BE00FC95FF /* fluid_ringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_ringbuffer.h; sourceTree = "<group>"; };
+		E958A4DB233DF5BE00FC95FF /* fluid_coremidi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_coremidi.c; sourceTree = "<group>"; };
+		E958A4DC233DF5BE00FC95FF /* fluid_seqbind.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_seqbind.c; sourceTree = "<group>"; };
+		E958A4DD233DF5BE00FC95FF /* fluid_defsfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_defsfont.h; sourceTree = "<group>"; };
+		E958A4DE233DF5BE00FC95FF /* fluid_midishare.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_midishare.c; sourceTree = "<group>"; };
+		E958A4DF233DF5BE00FC95FF /* fluid_sfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fluid_sfont.h; sourceTree = "<group>"; };
+		E958A4E0233DF5BE00FC95FF /* fluid_adriver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_adriver.c; sourceTree = "<group>"; };
+		E958A4E1233DF5BF00FC95FF /* fluid_synth_monopoly.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_synth_monopoly.c; sourceTree = "<group>"; };
+		E958A4E2233DF5BF00FC95FF /* fluid_gen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fluid_gen.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E958A3BA233DECE700FC95FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E958A3B4233DECE700FC95FF = {
+			isa = PBXGroup;
+			children = (
+				E942B5CD238EB0BA00A7F9FA /* fluid_synth.m */,
+				E958A4AA233DF5BA00FC95FF /* CMakeLists.txt */,
+				E958A4E0233DF5BE00FC95FF /* fluid_adriver.c */,
+				E958A4C6233DF5BC00FC95FF /* fluid_adriver.h */,
+				E958A4C4233DF5BC00FC95FF /* fluid_adsr_env.c */,
+				E958A47F233DF5B800FC95FF /* fluid_adsr_env.h */,
+				E958A49C233DF5BA00FC95FF /* fluid_alsa.c */,
+				E958A4AC233DF5BB00FC95FF /* fluid_aufile.c */,
+				E958A49D233DF5BA00FC95FF /* fluid_chan.c */,
+				E958A4D4233DF5BD00FC95FF /* fluid_chan.h */,
+				E958A4D5233DF5BD00FC95FF /* fluid_chorus.c */,
+				E958A4D9233DF5BE00FC95FF /* fluid_chorus.h */,
+				E958A4A5233DF5BA00FC95FF /* fluid_cmd.c */,
+				E958A4B3233DF5BB00FC95FF /* fluid_cmd.h */,
+				E958A4D7233DF5BE00FC95FF /* fluid_conv.c */,
+				E958A4B6233DF5BB00FC95FF /* fluid_conv.h */,
+				E958A4CE233DF5BD00FC95FF /* fluid_coreaudio.c */,
+				E958A4DB233DF5BE00FC95FF /* fluid_coremidi.c */,
+				E958A482233DF5B800FC95FF /* fluid_dart.c */,
+				E958A4AD233DF5BB00FC95FF /* fluid_defsfont.c */,
+				E958A4DD233DF5BE00FC95FF /* fluid_defsfont.h */,
+				E958A480233DF5B800FC95FF /* fluid_event.c */,
+				E958A487233DF5B900FC95FF /* fluid_filerenderer.c */,
+				E958A4E2233DF5BF00FC95FF /* fluid_gen.c */,
+				E958A4AB233DF5BB00FC95FF /* fluid_gen.h */,
+				E958A4B9233DF5BB00FC95FF /* fluid_hash.c */,
+				E958A49A233DF5BA00FC95FF /* fluid_hash.h */,
+				E958A492233DF5B900FC95FF /* fluid_iir_filter.c */,
+				E958A47E233DF5B800FC95FF /* fluid_iir_filter.h */,
+				E958A4A9233DF5BA00FC95FF /* fluid_jack.c */,
+				E958A4C5233DF5BC00FC95FF /* fluid_ladspa.c */,
+				E958A48A233DF5B900FC95FF /* fluid_ladspa.h */,
+				E958A4D3233DF5BD00FC95FF /* fluid_lash.c */,
+				E958A493233DF5B900FC95FF /* fluid_lash.h */,
+				E958A489233DF5B900FC95FF /* fluid_lfo.c */,
+				E958A4B4233DF5BB00FC95FF /* fluid_lfo.h */,
+				E958A4D6233DF5BE00FC95FF /* fluid_list.c */,
+				E958A4D2233DF5BD00FC95FF /* fluid_list.h */,
+				E958A4A6233DF5BA00FC95FF /* fluid_mdriver.c */,
+				E958A485233DF5B900FC95FF /* fluid_mdriver.h */,
+				E958A4D0233DF5BD00FC95FF /* fluid_midi_router.c */,
+				E958A4BF233DF5BC00FC95FF /* fluid_midi_router.h */,
+				E958A4B8233DF5BB00FC95FF /* fluid_midi.c */,
+				E958A4C1233DF5BC00FC95FF /* fluid_midi.h */,
+				E958A4DE233DF5BE00FC95FF /* fluid_midishare.c */,
+				E958A496233DF5B900FC95FF /* fluid_mod.c */,
+				E958A495233DF5B900FC95FF /* fluid_mod.h */,
+				E958A4CF233DF5BD00FC95FF /* fluid_oss.c */,
+				E958A497233DF5B900FC95FF /* fluid_phase.h */,
+				E958A48C233DF5B900FC95FF /* fluid_portaudio.c */,
+				E958A4BC233DF5BB00FC95FF /* fluid_pulse.c */,
+				E958A499233DF5BA00FC95FF /* fluid_rev.c */,
+				E958A4C7233DF5BC00FC95FF /* fluid_rev.h */,
+				E958A49B233DF5BA00FC95FF /* fluid_ringbuffer.c */,
+				E958A4DA233DF5BE00FC95FF /* fluid_ringbuffer.h */,
+				E958A4AF233DF5BB00FC95FF /* fluid_rtkit.c */,
+				E958A4A8233DF5BA00FC95FF /* fluid_rtkit.h */,
+				E958A486233DF5B900FC95FF /* fluid_rvoice_dsp.c */,
+				E958A494233DF5B900FC95FF /* fluid_rvoice_event.c */,
+				E958A4C2233DF5BC00FC95FF /* fluid_rvoice_event.h */,
+				E958A4C3233DF5BC00FC95FF /* fluid_rvoice_mixer.c */,
+				E958A48F233DF5B900FC95FF /* fluid_rvoice_mixer.h */,
+				E958A4C9233DF5BC00FC95FF /* fluid_rvoice.c */,
+				E958A4CC233DF5BD00FC95FF /* fluid_rvoice.h */,
+				E958A4BA233DF5BB00FC95FF /* fluid_seq.c */,
+				E958A4DC233DF5BE00FC95FF /* fluid_seqbind.c */,
+				E958A4CD233DF5BD00FC95FF /* fluid_settings.c */,
+				E958A498233DF5BA00FC95FF /* fluid_settings.h */,
+				E958A49F233DF5BA00FC95FF /* fluid_sfont.c */,
+				E958A4DF233DF5BE00FC95FF /* fluid_sfont.h */,
+				E958A4A0233DF5BA00FC95FF /* fluid_sndmgr.c */,
+				E958A4E1233DF5BF00FC95FF /* fluid_synth_monopoly.c */,
+				E958A49E233DF5BA00FC95FF /* fluid_synth.h */,
+				E958A48D233DF5B900FC95FF /* fluid_sys.c */,
+				E958A4C0233DF5BC00FC95FF /* fluid_sys.h */,
+				E958A4BD233DF5BB00FC95FF /* fluid_tuning.c */,
+				E958A4A2233DF5BA00FC95FF /* fluid_tuning.h */,
+				E958A4BE233DF5BB00FC95FF /* fluid_voice.c */,
+				E958A4BB233DF5BB00FC95FF /* fluid_voice.h */,
+				E958A4D1233DF5BD00FC95FF /* fluid_winmidi.c */,
+				E958A490233DF5B900FC95FF /* fluidsynth */,
+				E958A4B2233DF5BB00FC95FF /* fluidsynth_priv.h */,
+				E958A483233DF5B900FC95FF /* fluidsynth.c */,
+				E958A4AE233DF5BB00FC95FF /* fluidsynth.h */,
+				E958A422233DF04200FC95FF /* config.h */,
+				E958A3BE233DECE700FC95FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E958A3BE233DECE700FC95FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E958A3BD233DECE700FC95FF /* libfluid.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E958A3BC233DECE700FC95FF /* fluid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E958A3C6233DECE700FC95FF /* Build configuration list for PBXNativeTarget "fluid" */;
+			buildPhases = (
+				E958A3B9233DECE700FC95FF /* Sources */,
+				E958A3BA233DECE700FC95FF /* Frameworks */,
+				E958A3BB233DECE700FC95FF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fluid;
+			productName = fluid;
+			productReference = E958A3BD233DECE700FC95FF /* libfluid.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E958A3B5233DECE700FC95FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Ficko;
+				TargetAttributes = {
+					E958A3BC233DECE700FC95FF = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = E958A3B8233DECE700FC95FF /* Build configuration list for PBXProject "fluid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E958A3B4233DECE700FC95FF;
+			productRefGroup = E958A3BE233DECE700FC95FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E958A3BC233DECE700FC95FF /* fluid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E958A3B9233DECE700FC95FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E958A4F2233DF5BF00FC95FF /* fluid_mod.c in Sources */,
+				E958A4FF233DF5BF00FC95FF /* fluid_defsfont.c in Sources */,
+				E958A517233DF5BF00FC95FF /* fluid_lash.c in Sources */,
+				E958A4FD233DF5BF00FC95FF /* fluid_jack.c in Sources */,
+				E958A4FE233DF5BF00FC95FF /* fluid_aufile.c in Sources */,
+				E958A51F233DF5BF00FC95FF /* fluid_adriver.c in Sources */,
+				E958A4F5233DF5BF00FC95FF /* fluid_alsa.c in Sources */,
+				E958A521233DF5BF00FC95FF /* fluid_gen.c in Sources */,
+				E958A50A233DF5BF00FC95FF /* fluid_voice.c in Sources */,
+				E958A516233DF5BF00FC95FF /* fluid_winmidi.c in Sources */,
+				E958A519233DF5BF00FC95FF /* fluid_list.c in Sources */,
+				E958A4F1233DF5BF00FC95FF /* fluid_rvoice_event.c in Sources */,
+				E958A4E9233DF5BF00FC95FF /* fluid_rvoice_dsp.c in Sources */,
+				E958A4EF233DF5BF00FC95FF /* fluid_sys.c in Sources */,
+				E958A51D233DF5BF00FC95FF /* fluid_seqbind.c in Sources */,
+				E958A506233DF5BF00FC95FF /* fluid_hash.c in Sources */,
+				E958A4EA233DF5BF00FC95FF /* fluid_filerenderer.c in Sources */,
+				E958A4FB233DF5BF00FC95FF /* fluid_mdriver.c in Sources */,
+				E958A520233DF5BF00FC95FF /* fluid_synth_monopoly.c in Sources */,
+				E958A4F3233DF5BF00FC95FF /* fluid_rev.c in Sources */,
+				E958A4FA233DF5BF00FC95FF /* fluid_cmd.c in Sources */,
+				E958A500233DF5BF00FC95FF /* fluid_rtkit.c in Sources */,
+				E958A4E8233DF5BF00FC95FF /* fluidsynth.c in Sources */,
+				E958A513233DF5BF00FC95FF /* fluid_coreaudio.c in Sources */,
+				E958A50C233DF5BF00FC95FF /* fluid_adsr_env.c in Sources */,
+				E958A50F233DF5BF00FC95FF /* fluid_rvoice.c in Sources */,
+				E958A4F4233DF5BF00FC95FF /* fluid_ringbuffer.c in Sources */,
+				E958A508233DF5BF00FC95FF /* fluid_pulse.c in Sources */,
+				E942B5CE238EB0BA00A7F9FA /* fluid_synth.m in Sources */,
+				E958A4EC233DF5BF00FC95FF /* fluid_lfo.c in Sources */,
+				E958A505233DF5BF00FC95FF /* fluid_midi.c in Sources */,
+				E958A518233DF5BF00FC95FF /* fluid_chorus.c in Sources */,
+				E958A51A233DF5BF00FC95FF /* fluid_conv.c in Sources */,
+				E958A512233DF5BF00FC95FF /* fluid_settings.c in Sources */,
+				E958A509233DF5BF00FC95FF /* fluid_tuning.c in Sources */,
+				E958A4F7233DF5BF00FC95FF /* fluid_sfont.c in Sources */,
+				E958A4E6233DF5BF00FC95FF /* fluid_event.c in Sources */,
+				E958A507233DF5BF00FC95FF /* fluid_seq.c in Sources */,
+				E958A51C233DF5BF00FC95FF /* fluid_coremidi.c in Sources */,
+				E958A514233DF5BF00FC95FF /* fluid_oss.c in Sources */,
+				E958A4F0233DF5BF00FC95FF /* fluid_iir_filter.c in Sources */,
+				E958A50D233DF5BF00FC95FF /* fluid_ladspa.c in Sources */,
+				E958A50B233DF5BF00FC95FF /* fluid_rvoice_mixer.c in Sources */,
+				E958A4EE233DF5BF00FC95FF /* fluid_portaudio.c in Sources */,
+				E958A4F8233DF5BF00FC95FF /* fluid_sndmgr.c in Sources */,
+				E958A515233DF5BF00FC95FF /* fluid_midi_router.c in Sources */,
+				E958A4E7233DF5BF00FC95FF /* fluid_dart.c in Sources */,
+				E958A4F6233DF5BF00FC95FF /* fluid_chan.c in Sources */,
+				E958A51E233DF5BF00FC95FF /* fluid_midishare.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E958A3C4233DECE700FC95FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E958A3C5233DECE700FC95FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E958A3C7233DECE700FC95FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E958A3C8233DECE700FC95FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=0";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E958A3B8233DECE700FC95FF /* Build configuration list for PBXProject "fluid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E958A3C4233DECE700FC95FF /* Debug */,
+				E958A3C5233DECE700FC95FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E958A3C6233DECE700FC95FF /* Build configuration list for PBXNativeTarget "fluid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E958A3C7233DECE700FC95FF /* Debug */,
+				E958A3C8233DECE700FC95FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E958A3B5233DECE700FC95FF /* Project object */;
+}
