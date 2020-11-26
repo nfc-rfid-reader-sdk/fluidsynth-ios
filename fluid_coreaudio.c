@@ -115,7 +115,7 @@ int delete_fluid_core_audio_driver(fluid_audio_driver_t* p);
 void
 fluid_core_audio_driver_settings(fluid_settings_t* settings)
 {
-/*   fluid_settings_register_str(settings, "audio.coreaudio.device", "default", 0, NULL, NULL); */
+
 }
 
 /*
@@ -150,7 +150,6 @@ new_fluid_core_audio_driver2(fluid_settings_t* settings, fluid_audio_func_t func
     dev->callback = func;
     dev->data = data;
     
-    // Describe audio component
     AudioComponentDescription desc;
     desc.componentType = kAudioUnitType_Output;
     desc.componentSubType = kAudioUnitSubType_RemoteIO;
@@ -158,17 +157,14 @@ new_fluid_core_audio_driver2(fluid_settings_t* settings, fluid_audio_func_t func
     desc.componentFlagsMask = 0;
     desc.componentManufacturer = kAudioUnitManufacturer_Apple;
     
-    // Get component
     AudioComponent inputComponent = AudioComponentFindNext(NULL, &desc);
     
-    // Get audio units
     status = AudioComponentInstanceNew(inputComponent, &dev->id);
     if (status != noErr) {
         FLUID_LOG(FLUID_ERR, "Failed to get audio unit");
         goto error_recovery;
     }
     
-    // Enable IO for playback
     UInt32 flag = 1;
     status = AudioUnitSetProperty(dev->id,
                                   kAudioOutputUnitProperty_EnableIO,
@@ -181,7 +177,6 @@ new_fluid_core_audio_driver2(fluid_settings_t* settings, fluid_audio_func_t func
         goto error_recovery;
     }
     
-    // Describe format
     dev->format.mSampleRate            = 44100.00;
     dev->format.mFormatID            = kAudioFormatLinearPCM;
     dev->format.mFormatFlags        = kAudioFormatFlagIsSignedInteger | kAudioFormatFlagIsPacked;
@@ -278,9 +273,7 @@ OSStatus playbackCallback(void *inRefCon,
                                  UInt32 inBusNumber,
                                  UInt32 inNumberFrames,
                                  AudioBufferList *ioData) {
-    // Notes: ioData contains buffers (may be more than one!)
-    // Fill them up as much as you can. Remember to set the size value in each buffer to match how
-    // much data is in the buffer.
+
     int i, k;
     fluid_core_audio_driver_t* dev = (fluid_core_audio_driver_t*) inRefCon;
     int len = my_min(dev->buffer_size, ioData->mBuffers[0].mDataByteSize / dev->format.mBytesPerFrame);
@@ -301,7 +294,6 @@ OSStatus playbackCallback(void *inRefCon,
     else fluid_synth_write_s16((fluid_synth_t*) dev->data, len, buffer, 0, 2,
                                  buffer, 1, 2);
 
-    // set ioData values
     ioData->mNumberBuffers = 1;
     ioData->mBuffers[0].mNumberChannels = 2;
     ioData->mBuffers[0].mDataByteSize = len * dev->format.mBytesPerFrame;
